@@ -1,0 +1,12 @@
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.deps.json
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.pdb
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.AssemblyInfoInputs.cache
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.AssemblyInfo.cs
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.csproj.CoreCompileInputs.cache
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.sourcelink.json
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\refint\PetLyve.Application.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.pdb
+C:\2TDSPF_NET\PetLyve\PetLyve.Application\obj\Debug\net10.0\ref\PetLyve.Application.dll

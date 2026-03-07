@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetLyve.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+edd64781fd295d3ae9ce4360843f7ccb0e126bfa")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetLyve.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetLyve.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

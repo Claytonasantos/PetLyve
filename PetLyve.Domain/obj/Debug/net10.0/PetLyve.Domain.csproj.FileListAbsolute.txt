@@ -1,0 +1,12 @@
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\bin\Debug\net10.0\PetLyve.Domain.deps.json
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\bin\Debug\net10.0\PetLyve.Domain.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\bin\Debug\net10.0\PetLyve.Domain.pdb
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.AssemblyInfoInputs.cache
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.AssemblyInfo.cs
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.csproj.CoreCompileInputs.cache
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.sourcelink.json
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\refint\PetLyve.Domain.dll
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\PetLyve.Domain.pdb
+C:\2TDSPF_NET\PetLyve\PetLyve.Domain\obj\Debug\net10.0\ref\PetLyve.Domain.dll

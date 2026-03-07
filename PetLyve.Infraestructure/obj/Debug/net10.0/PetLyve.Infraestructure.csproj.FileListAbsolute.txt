@@ -10,3 +10,15 @@ C:\2TDSPF_NET\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraest
 C:\2TDSPF_NET\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\refint\PetLyve.Infraestructure.dll
 C:\2TDSPF_NET\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.pdb
 C:\2TDSPF_NET\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\ref\PetLyve.Infraestructure.dll
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\bin\Debug\net10.0\PetLyve.Infraestructure.deps.json
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\bin\Debug\net10.0\PetLyve.Infraestructure.dll
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\bin\Debug\net10.0\PetLyve.Infraestructure.pdb
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.sourcelink.json
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.dll
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\refint\PetLyve.Infraestructure.dll
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\PetLyve.Infraestructure.pdb
+C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Infraestructure\obj\Debug\net10.0\ref\PetLyve.Infraestructure.dll

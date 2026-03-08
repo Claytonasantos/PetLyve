@@ -8,6 +8,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Domain", "PetLyve.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Infraestructure", "PetLyve.Infraestructure\PetLyve.Infraestructure.csproj", "{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D88289B4-C72F-4117-ACA5-ECBD36521F22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{99E295A2-0283-4A25-95F3-4393B582BE7D}"
+	ProjectSection(SolutionItems) = preProject
+		docs\Conceitual_PetLyfe.png = docs\Conceitual_PetLyfe.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +37,11 @@ Global
 		{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{67398E3C-A39E-4E6A-B168-1B384AB2750C} = {D88289B4-C72F-4117-ACA5-ECBD36521F22}
+		{69077956-4BD9-4049-9521-DDD5E922A780} = {D88289B4-C72F-4117-ACA5-ECBD36521F22}
+		{80736039-8446-4B0D-80DB-63ACF774E0E4} = {D88289B4-C72F-4117-ACA5-ECBD36521F22}
+		{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B} = {D88289B4-C72F-4117-ACA5-ECBD36521F22}
 	EndGlobalSection
 EndGlobal

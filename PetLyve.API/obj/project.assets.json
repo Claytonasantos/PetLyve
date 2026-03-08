@@ -83,24 +83,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pichau\\.nuget\\packages\\": {}
+    "C:\\Users\\clayt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\petlyfe\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
+      "projectUniqueName": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
       "projectName": "PetLyve.API",
-      "projectPath": "C:\\Users\\Pichau\\Desktop\\petlyfe\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
-      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\Desktop\\petlyfe\\PetLyve\\PetLyve.API\\obj\\",
+      "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
+      "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
+      "outputPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -149,7 +151,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\clayt\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

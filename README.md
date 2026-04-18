@@ -1,18 +1,15 @@
-# Petlyfe - Projeto Petshop (CP1)
+# Petlyfe - Projeto Petshop (CP1 e CP2)
 
 **Grupo:**
-
 * Guilherme Sola Garcia - RM563674
 * Clayton Alves dos Santos - RM562285
 
 ---
 
-### Sobre o Projeto
+### 🎯 Sobre o Projeto
+A gente escolheu o domínio de um **Petshop**. O foco aqui foi modelar como funciona o atendimento, desde o dono chegando com o pet até o pagamento do serviço.
 
-A gente escolheu o domínio de um Petshop. O foco aqui foi modelar como funciona o atendimento, desde o dono chegando com o pet até o pagamento do serviço.
-
-### O que foi modelado (Entidades):
-
+### 🐾 O que foi modelado (Entidades):
 * **Dono:** Dados de quem leva o pet.
 * **Animal:** O pet que vai receber o serviço.
 * **Funcionario:** Quem vai trabalhar no atendimento.
@@ -20,31 +17,31 @@ A gente escolheu o domínio de um Petshop. O foco aqui foi modelar como funciona
 * **Agendamento:** Onde a gente junta o pet, o funcionário e o serviço com uma data.
 * **Pagamento:** O registro do valor pago pelo agendamento.
 
-### Relacionamentos:
-
+### 🔗 Relacionamentos:
 * Um **Dono** pode ter vários **Animais** (1:N).
 * Um **Animal** pode ter vários **Agendamentos** (1:N).
 * Um **Funcionario** faz vários **Agendamentos** (1:N).
 * Um **Servico** pode estar em vários **Agendamentos** (1:N).
 * Um **Agendamento** gera um **Pagamento** (1:1).
 
-### Estrutura do Código:
-
+### 🏗️ Estrutura do Código:
 O projeto foi dividido seguindo a ideia de **Clean Arch**, com as pastas:
+* **Domain:** Onde estão as nossas classes (entidades).
+* **Application / Infrastructure / API:** Criamos as pastas para deixar o projeto já estruturado.
 
-* **Domain**: Onde estão as nossas classes (entidades).
-* **Application / Infrastructure / Api**: Criamos as pastas para deixar o projeto já estruturado.
+---
 
-💾 Persistência e Banco de Dados (CP2)
-SGBD Escolhido: SQLite
-Optamos por usar o SQLite devido à sua simplicidade e portabilidade. Ele gera um arquivo .db local na raiz do projeto da API, não expondo credenciais reais (como senhas de servidores) no repositório e garantindo que o projeto seja 100% reproduzível ao clonar.
+### 💾 Persistência e Banco de Dados (CP2)
 
-Como testar o Banco de Dados e Migrations
-Abra o terminal na raiz do projeto.
-Atualize o banco para a última versão executando:dotnet ef database update --project src/PetLyve.Infrastructure --startup-project src/PetLyve.Api
-Execute o projeto API.
-Acesse o endpoint GET /api/health no navegador para validar a conexão com o banco de dados.
+**SGBD Escolhido: SQLite**
+Optamos por usar o SQLite devido à sua simplicidade e portabilidade. Ele gera um arquivo `.db` local na raiz do projeto da API, não expondo credenciais reais (como senhas de servidores) no repositório e garantindo que o projeto seja 100% reproduzível ao clonar.
 
-Estrutura de Dados
-Implementamos o padrão Repository Genérico na camada Application.
-O mapeamento das entidades foi feito utilizando Fluent API (IEntityTypeConfiguration) na camada de Infrastructure, garantindo a correta relação 1:N e 1:1 estipulada no MER.
+**Estrutura de Dados:**
+* Implementamos o padrão **Repository Genérico** na camada `Application`.
+* O mapeamento das entidades foi feito utilizando **Fluent API** (`IEntityTypeConfiguration`) na camada de `Infrastructure`, garantindo a correta relação 1:N e 1:1 estipulada no MER.
+
+### 🚀 Como testar o Banco de Dados e Migrations
+1. Abra o terminal na raiz do projeto.
+2. Atualize o banco para a última versão executando o comando abaixo:
+   ```bash
+   dotnet ef database update --project PetLyve.Infrastructure --startup-project PetLyve.API

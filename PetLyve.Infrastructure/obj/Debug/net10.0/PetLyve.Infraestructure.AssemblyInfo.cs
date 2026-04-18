@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetLyve.Infraestructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+277dc06b04f582468a507cd550e096f2803167fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bfc53c9064e4ddd01ad562d35a304a99221b203")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetLyve.Infraestructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetLyve.Infraestructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

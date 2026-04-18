@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Application", "PetL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Domain", "PetLyve.Domain\PetLyve.Domain.csproj", "{80736039-8446-4B0D-80DB-63ACF774E0E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Infraestructure", "PetLyve.Infraestructure\PetLyve.Infraestructure.csproj", "{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetLyve.Infrastructure", "PetLyve.Infrastructure\PetLyve.Infrastructure.csproj", "{7895B0DA-E8A7-4C36-BF06-DB7B8F0F1C2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D88289B4-C72F-4117-ACA5-ECBD36521F22}"
 EndProject

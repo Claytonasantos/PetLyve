@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj": {}
+    "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
+    "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj",
         "projectName": "PetLyve.Application",
-        "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj",
-        "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
-        "outputPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\obj\\",
+        "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj",
+        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\clayt\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -339,24 +337,22 @@
         }
       }
     },
-    "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
+    "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj",
         "projectName": "PetLyve.Domain",
-        "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj",
-        "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
-        "outputPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj",
+        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -396,7 +392,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\clayt\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -674,35 +670,33 @@
         }
       }
     },
-    "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj": {
+    "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
         "projectName": "PetLyve.Infrastructure",
-        "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
-        "outputPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
-                "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj"
+              "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
+                "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj"
               },
-              "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
-                "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
+              "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
+                "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
               }
             }
           }
@@ -744,7 +738,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\clayt\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

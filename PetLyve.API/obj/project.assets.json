@@ -827,6 +827,41 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "PetLyve.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/PetLyve.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetLyve.Application.dll": {}
+        }
+      },
+      "PetLyve.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/PetLyve.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetLyve.Domain.dll": {}
+        }
+      },
+      "PetLyve.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Sqlite": "10.0.6",
+          "PetLyve.Application": "1.0.0",
+          "PetLyve.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PetLyve.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetLyve.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2461,42 +2496,68 @@
         "system.composition.typedparts.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "PetLyve.Application/1.0.0": {
+      "type": "project",
+      "path": "../PetLyve.Application/PetLyve.Application.csproj",
+      "msbuildProject": "../PetLyve.Application/PetLyve.Application.csproj"
+    },
+    "PetLyve.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PetLyve.Domain/PetLyve.Domain.csproj",
+      "msbuildProject": "../PetLyve.Domain/PetLyve.Domain.csproj"
+    },
+    "PetLyve.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../PetLyve.Infrastructure/PetLyve.Infrastructure.csproj",
+      "msbuildProject": "../PetLyve.Infrastructure/PetLyve.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net10.0": [
       "Microsoft.AspNetCore.OpenApi >= 10.0.3",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.6",
-      "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.6"
+      "Microsoft.EntityFrameworkCore.Sqlite >= 10.0.6",
+      "PetLyve.Application >= 1.0.0",
+      "PetLyve.Domain >= 1.0.0",
+      "PetLyve.Infrastructure >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clayt\\.nuget\\packages\\": {}
+    "C:\\Users\\Pichau\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
+      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
       "projectName": "PetLyve.API",
-      "projectPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
-      "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
-      "outputPath": "C:\\2TDSPF_NET\\PetLyve\\PetLyve.API\\obj\\",
+      "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.API\\PetLyve.API.csproj",
+      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj"
+            },
+            "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
+            },
+            "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -2549,7 +2610,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\clayt\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

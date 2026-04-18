@@ -1,23 +1,21 @@
+using Microsoft.EntityFrameworkCore;
+using PetLyve.Application;
+using PetLyve.Infrastructure.Data;
+using PetLyve.Infrastructure.Data.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.MapGet("/api/health", async (ApplicationDbContext db) =>
 {
-    app.MapOpenApi();
-}
-
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
-app.MapControllers();
+    var canConnect = await db.Database.CanConnectAsync();
+    return canConnect ? Results.Ok("Banco SQLite rodando lisinho! 🐾") : Results.StatusCode(500);
+});
 
 app.Run();

@@ -16,4 +16,10 @@
         <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="10.0.6" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\PetLyve.Application\PetLyve.Application.csproj" />
+      <ProjectReference Include="..\PetLyve.Domain\PetLyve.Domain.csproj" />
+      <ProjectReference Include="..\PetLyve.Infrastructure\PetLyve.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

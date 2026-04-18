@@ -22,3 +22,15 @@ C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Application\obj\Debug\net10.0\Pe
 C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Application\obj\Debug\net10.0\refint\PetLyve.Application.dll
 C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.pdb
 C:\Users\Pichau\Desktop\petlyfe\PetLyve\PetLyve.Application\obj\Debug\net10.0\ref\PetLyve.Application.dll
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.deps.json
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.dll
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\bin\Debug\net10.0\PetLyve.Application.pdb
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.AssemblyInfoInputs.cache
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.AssemblyInfo.cs
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.csproj.CoreCompileInputs.cache
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.sourcelink.json
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.dll
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\refint\PetLyve.Application.dll
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\PetLyve.Application.pdb
+C:\Users\Pichau\Desktop\expo\PetLyve\PetLyve.Application\obj\Debug\net10.0\ref\PetLyve.Application.dll

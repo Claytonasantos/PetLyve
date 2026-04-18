@@ -34,3 +34,17 @@ O projeto foi dividido seguindo a ideia de **Clean Arch**, com as pastas:
 
 * **Domain**: Onde estão as nossas classes (entidades).
 * **Application / Infrastructure / Api**: Criamos as pastas para deixar o projeto já estruturado.
+
+💾 Persistência e Banco de Dados (CP2)
+SGBD Escolhido: SQLite
+Optamos por usar o SQLite devido à sua simplicidade e portabilidade. Ele gera um arquivo .db local na raiz do projeto da API, não expondo credenciais reais (como senhas de servidores) no repositório e garantindo que o projeto seja 100% reproduzível ao clonar.
+
+Como testar o Banco de Dados e Migrations
+Abra o terminal na raiz do projeto.
+Atualize o banco para a última versão executando:dotnet ef database update --project src/PetLyve.Infrastructure --startup-project src/PetLyve.Api
+Execute o projeto API.
+Acesse o endpoint GET /api/health no navegador para validar a conexão com o banco de dados.
+
+Estrutura de Dados
+Implementamos o padrão Repository Genérico na camada Application.
+O mapeamento das entidades foi feito utilizando Fluent API (IEntityTypeConfiguration) na camada de Infrastructure, garantindo a correta relação 1:N e 1:1 estipulada no MER.

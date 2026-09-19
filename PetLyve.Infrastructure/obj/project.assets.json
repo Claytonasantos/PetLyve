@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "targets": {
     "net10.0": {
       "Microsoft.Data.Sqlite.Core/10.0.6": {
@@ -1041,19 +1041,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Pichau\\.nuget\\packages\\": {}
+    "C:\\Users\\clayt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
+      "projectUniqueName": "C:\\PetLyve\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
       "projectName": "PetLyve.Infrastructure",
-      "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\Pichau\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Infrastructure\\obj\\",
+      "projectPath": "C:\\PetLyve\\PetLyve\\PetLyve.Infrastructure\\PetLyve.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\clayt\\.nuget\\packages\\",
+      "outputPath": "C:\\PetLyve\\PetLyve\\PetLyve.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Pichau\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\clayt\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
@@ -1063,13 +1063,14 @@
       },
       "frameworks": {
         "net10.0": {
+          "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
-              "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj"
+            "C:\\PetLyve\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj": {
+              "projectPath": "C:\\PetLyve\\PetLyve\\PetLyve.Application\\PetLyve.Application.csproj"
             },
-            "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
-              "projectPath": "C:\\Users\\Pichau\\Desktop\\expo\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
+            "C:\\PetLyve\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
+              "projectPath": "C:\\PetLyve\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
             }
           }
         }
@@ -1084,10 +1085,11 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
+        "framework": "net10.0",
         "targetAlias": "net10.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Sqlite": {
@@ -1111,7 +1113,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\Pichau\\.dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -1388,5 +1390,17 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'SQLitePCLRaw.lib.e_sqlite3' 2.1.11 has a known high severity vulnerability, https://github.com/advisories/GHSA-2m69-gcr7-jv3q",
+      "libraryId": "SQLitePCLRaw.lib.e_sqlite3",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

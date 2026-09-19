@@ -1,8 +1,13 @@
-﻿namespace PetLyve.Domain.Entities;
+﻿using PetLyve.Domain.Entities.Base;
 
-public class Agendamento
+namespace PetLyve.Domain.Entities;
+
+public class Agendamento : BaseEntity
 {
     public Guid AgendamentoId { get; set; }
+
+    public override Guid Id => AgendamentoId;
+
     public DateTime Data { get; set; }
 
     public Guid AnimalId { get; set; }

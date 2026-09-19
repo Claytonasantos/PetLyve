@@ -1,8 +1,13 @@
-﻿namespace PetLyve.Domain.Entities;
+﻿using PetLyve.Domain.Entities.Base;
 
-public class Pagamento
+namespace PetLyve.Domain.Entities;
+
+public class Pagamento : BaseEntity
 {
     public Guid PagamentoId { get; set; }
+
+    public override Guid Id => PagamentoId;
+
     public decimal Valor { get; set; }
     public DateTime Data { get; set; }
 

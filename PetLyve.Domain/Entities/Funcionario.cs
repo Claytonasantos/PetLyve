@@ -1,8 +1,13 @@
-﻿namespace PetLyve.Domain.Entities;
+﻿using PetLyve.Domain.Entities.Base;
 
-public class Funcionario
+namespace PetLyve.Domain.Entities;
+
+public class Funcionario : BaseEntity
 {
     public Guid FuncionarioId { get; set; }
+
+    public override Guid Id => FuncionarioId;
+
     public string Nome { get; set; }
     public string Cargo { get; set; }
 

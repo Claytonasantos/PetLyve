@@ -1,8 +1,13 @@
-﻿namespace PetLyve.Domain.Entities;
+﻿using PetLyve.Domain.Entities.Base;
 
-public class Servico
+namespace PetLyve.Domain.Entities;
+
+public class Servico : BaseEntity
 {
     public Guid ServicoId { get; set; }
+
+    public override Guid Id => ServicoId;
+
     public string NomeServico { get; set; }
     public decimal Preco { get; set; }
 

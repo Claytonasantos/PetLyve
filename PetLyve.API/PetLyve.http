@@ -1,6 +1,52 @@
 @PetLyve_HostAddress = http://localhost:5091
 
-GET {{PetLyve_HostAddress}}/weatherforecast/
+### Listar donos
+GET {{PetLyve_HostAddress}}/api/donos
 Accept: application/json
 
 ###
+
+### Criar dono
+POST {{PetLyve_HostAddress}}/api/donos
+Content-Type: application/json
+
+{
+  "nome": "Clayton",
+  "telefone": "11999999999",
+  "email": "clayton@email.com"
+}
+
+###
+
+### Listar animais
+GET {{PetLyve_HostAddress}}/api/animais
+Accept: application/json
+
+###
+
+### Criar animal
+POST {{PetLyve_HostAddress}}/api/animais
+Content-Type: application/json
+
+{
+  "nome": "Thor",
+  "especie": "Cachorro",
+  "donoId": "8d0793db-4522-495a-ac70-8cdb38cce288"
+}
+
+###
+
+### Listar serviços
+GET {{PetLyve_HostAddress}}/api/servicos
+Accept: application/json
+
+###
+
+### Criar serviço
+POST {{PetLyve_HostAddress}}/api/servicos
+Content-Type: application/json
+
+{
+  "nomeServico": "Banho",
+  "preco": 50.00
+}

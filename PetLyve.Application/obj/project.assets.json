@@ -1,11 +1,30 @@
 {
   "version": 4,
   "targets": {
-    "net10.0": {}
+    "net10.0": {
+      "PetLyve.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "compile": {
+          "bin/placeholder/PetLyve.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PetLyve.Domain.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "PetLyve.Domain/1.0.0": {
+      "type": "project",
+      "path": "../PetLyve.Domain/PetLyve.Domain.csproj",
+      "msbuildProject": "../PetLyve.Domain/PetLyve.Domain.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net10.0": []
+    "net10.0": [
+      "PetLyve.Domain >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\clayt\\.nuget\\packages\\": {}
@@ -32,7 +51,11 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\PetLyve\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj": {
+              "projectPath": "C:\\PetLyve\\PetLyve\\PetLyve.Domain\\PetLyve.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

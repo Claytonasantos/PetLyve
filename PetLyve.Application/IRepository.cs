@@ -1,9 +1,16 @@
-﻿namespace PetLyve.Application;
+﻿using PetLyve.Domain.Entities.Base;
 
-public interface IRepository<T> where T : class
+namespace PetLyve.Application;
+
+public interface IRepository<T> where T : BaseEntity
 {
-    Task<T?> ObterPorIdAsync(Guid id);
-    Task<IEnumerable<T>> ObterTodosAsync();
-    Task AdicionarAsync(T entity);
-    Task SalvarAlteracoesAsync();
+    Task<IEnumerable<T>> GetAllAsync();
+
+    Task<T?> GetByIdAsync(Guid id);
+
+    Task AddAsync(T entity);
+
+    Task DeleteAsync(T entity);
+
+    Task<bool> ExistsByIdAsync(Guid id);
 }

@@ -376,3 +376,8 @@ C:\PetLyve\PetLyve\PetLyve.API\obj\Debug\net10.0\refint\PetLyve.API.dll
 C:\PetLyve\PetLyve\PetLyve.API\obj\Debug\net10.0\PetLyve.API.pdb
 C:\PetLyve\PetLyve\PetLyve.API\obj\Debug\net10.0\PetLyve.API.genruntimeconfig.cache
 C:\PetLyve\PetLyve\PetLyve.API\obj\Debug\net10.0\ref\PetLyve.API.dll
+C:\PetLyve\PetLyve\PetLyve.API\bin\Debug\net10.0\PetLyve.API.xml
+C:\PetLyve\PetLyve\PetLyve.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\PetLyve\PetLyve\PetLyve.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\PetLyve\PetLyve\PetLyve.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\PetLyve\PetLyve\PetLyve.API\obj\Debug\net10.0\PetLyve.API.xml

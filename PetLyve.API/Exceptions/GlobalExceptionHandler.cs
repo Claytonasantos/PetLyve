@@ -17,9 +17,12 @@ public class GlobalExceptionHandler : IExceptionHandler
         Exception exception,
         CancellationToken cancellationToken)
     {
+        var traceId = httpContext.TraceIdentifier;
+
         _logger.LogError(
             exception,
-            "Ocorreu uma exceção não tratada.");
+            "Ocorreu uma exceção não tratada. TraceId={TraceId}",
+            traceId);
 
         var statusCode = exception switch
         {
@@ -59,6 +62,8 @@ public class GlobalExceptionHandler : IExceptionHandler
             Detail = detail,
             Instance = httpContext.Request.Path
         };
+
+        problemDetails.Extensions["traceId"] = traceId;
 
         httpContext.Response.StatusCode = statusCode;
         httpContext.Response.ContentType = "application/problem+json";

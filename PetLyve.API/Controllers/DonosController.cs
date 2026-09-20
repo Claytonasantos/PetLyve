@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using PetLyve.Application;
 using PetLyve.Application.DTOs.Dono;
-using PetLyve.Domain.Entities;
+using PetLyve.Application.Services;
 
 namespace PetLyve.API.Controllers;
 
@@ -9,11 +8,15 @@ namespace PetLyve.API.Controllers;
 [Route("api/[controller]")]
 public class DonosController : ControllerBase
 {
-    private readonly IRepository<Dono> _repository;
+    private readonly DonoService _service;
+    private readonly ILogger<DonosController> _logger;
 
-    public DonosController(IRepository<Dono> repository)
+    public DonosController(
+        DonoService service,
+        ILogger<DonosController> logger)
     {
-        _repository = repository;
+        _service = service;
+        _logger = logger;
     }
 
     /// <summary>
@@ -24,17 +27,9 @@ public class DonosController : ControllerBase
     [ProducesResponseType(typeof(IEnumerable<DonoResponseDto>), StatusCodes.Status200OK)]
     public async Task<ActionResult<IEnumerable<DonoResponseDto>>> GetAll()
     {
-        var donos = await _repository.GetAllAsync();
+        var donos = await _service.GetAllAsync();
 
-        var response = donos.Select(dono => new DonoResponseDto
-        {
-            DonoId = dono.DonoId,
-            Nome = dono.Nome,
-            Telefone = dono.Telefone,
-            Email = dono.Email
-        });
-
-        return Ok(response);
+        return Ok(donos);
     }
 
     /// <summary>
@@ -47,22 +42,9 @@ public class DonosController : ControllerBase
     [ProducesResponseType(StatusCodes.Status404NotFound)]
     public async Task<ActionResult<DonoResponseDto>> GetById(Guid id)
     {
-        var dono = await _repository.GetByIdAsync(id);
+        var dono = await _service.GetByIdAsync(id);
 
-        if (dono is null)
-        {
-            return NotFound();
-        }
-
-        var response = new DonoResponseDto
-        {
-            DonoId = dono.DonoId,
-            Nome = dono.Nome,
-            Telefone = dono.Telefone,
-            Email = dono.Email
-        };
-
-        return Ok(response);
+        return Ok(dono);
     }
 
     /// <summary>
@@ -76,27 +58,36 @@ public class DonosController : ControllerBase
     public async Task<ActionResult<DonoResponseDto>> Create(
         [FromBody] DonoRequestDto request)
     {
-        var dono = new Dono
+        var traceId = HttpContext.TraceIdentifier;
+
+        _logger.LogInformation(
+            "Iniciando cadastro de dono. Nome={Nome}, TraceId={TraceId}",
+            request.Nome,
+            traceId);
+
+        try
         {
-            DonoId = Guid.NewGuid(),
-            Nome = request.Nome,
-            Telefone = request.Telefone,
-            Email = request.Email
-        };
+            var response = await _service.CreateAsync(request);
 
-        await _repository.AddAsync(dono);
+            _logger.LogInformation(
+                "Dono cadastrado com sucesso. DonoId={DonoId}, TraceId={TraceId}",
+                response.DonoId,
+                traceId);
 
-        var response = new DonoResponseDto
+            return CreatedAtAction(
+                nameof(GetById),
+                new { id = response.DonoId },
+                response);
+        }
+        catch (Exception exception)
         {
-            DonoId = dono.DonoId,
-            Nome = dono.Nome,
-            Telefone = dono.Telefone,
-            Email = dono.Email
-        };
+            _logger.LogError(
+                exception,
+                "Erro ao cadastrar dono. Nome={Nome}, TraceId={TraceId}",
+                request.Nome,
+                traceId);
 
-        return CreatedAtAction(
-            nameof(GetById),
-            new { id = dono.DonoId },
-            response);
+            throw;
+        }
     }
 }

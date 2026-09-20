@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using PetLyve.API.Exceptions;
 using PetLyve.Application;
+using PetLyve.Application.Services;
 using PetLyve.Infrastructure.Data;
 using PetLyve.Infrastructure.Data.Repositories;
 using System.Text.Json;
@@ -44,6 +45,8 @@ builder.Services.AddHealthChecks()
 builder.Services.AddScoped(
     typeof(IRepository<>),
     typeof(Repository<>));
+
+builder.Services.AddScoped<DonoService>();
 
 var app = builder.Build();
 

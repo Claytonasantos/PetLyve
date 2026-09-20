@@ -1,8 +1,3 @@
-Sim. O README atual já está bom, mas está **parado no CP3** e tem alguns pontos que precisam ser atualizados para refletir o que vocês realmente fizeram no CP4.
-
-Eu colocaria o README completo assim. **Pode substituir o conteúdo inteiro do `README.md` por este:**
-
-````markdown
 # PetLyve — Projeto Petshop (CP1, CP2, CP3 e CP4)
 
 **Grupo:**
@@ -42,7 +37,6 @@ O domínio do projeto possui as seguintes entidades:
 - Um **Servico** pode estar relacionado a vários **Agendamentos** (1:N).
 - Um **Agendamento** possui um **Pagamento** (1:1).
 
----
 
 # 🏗️ Arquitetura
 

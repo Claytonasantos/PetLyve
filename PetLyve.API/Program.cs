@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using PetLyve.API.Exceptions;
 using PetLyve.Application;
 using PetLyve.Infrastructure.Data;
@@ -32,6 +33,10 @@ builder.Services.AddSwaggerGen(options =>
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlite(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
+builder.Services.AddHealthChecks()
+    .AddCheck("self", () => HealthCheckResult.Healthy())
+    .AddDbContextCheck<ApplicationDbContext>("database");
 
 builder.Services.AddScoped(
     typeof(IRepository<>),

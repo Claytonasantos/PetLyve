@@ -24,9 +24,14 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
 
     public async Task<T?> GetByIdAsync(Guid id)
     {
-        return await _dbSet
-            .AsNoTracking()
-            .FirstOrDefaultAsync(entity => entity.Id == id);
+        var entity = await _dbSet.FindAsync(id);
+
+        if (entity is not null)
+        {
+            _context.Entry(entity).State = EntityState.Detached;
+        }
+
+        return entity;
     }
 
     public async Task AddAsync(T entity)
@@ -43,8 +48,13 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
 
     public async Task<bool> ExistsByIdAsync(Guid id)
     {
-        return await _dbSet
-            .AsNoTracking()
-            .AnyAsync(entity => entity.Id == id);
+        var entity = await _dbSet.FindAsync(id);
+
+        if (entity is not null)
+        {
+            _context.Entry(entity).State = EntityState.Detached;
+        }
+
+        return entity is not null;
     }
 }

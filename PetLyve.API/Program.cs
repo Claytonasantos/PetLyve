@@ -1,11 +1,16 @@
 using Microsoft.EntityFrameworkCore;
+using PetLyve.API.Exceptions;
 using PetLyve.Application;
 using PetLyve.Infrastructure.Data;
 using PetLyve.Infrastructure.Data.Repositories;
 
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
+
+builder.Services.AddExceptionHandler<GlobalExceptionHandler>();
+builder.Services.AddProblemDetails();
 
 builder.Services.AddEndpointsApiExplorer();
 
@@ -33,6 +38,8 @@ builder.Services.AddScoped(
     typeof(Repository<>));
 
 var app = builder.Build();
+
+app.UseExceptionHandler();
 
 if (app.Environment.IsDevelopment())
 {

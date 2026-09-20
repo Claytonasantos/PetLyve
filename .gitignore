@@ -1,0 +1,9 @@
+# Rider
+.idea/
+
+# Build do .NET
+bin/
+obj/
+
+# Banco SQLite local
+*.db

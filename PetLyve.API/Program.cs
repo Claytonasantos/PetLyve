@@ -1,10 +1,11 @@
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using PetLyve.API.Exceptions;
 using PetLyve.Application;
 using PetLyve.Infrastructure.Data;
 using PetLyve.Infrastructure.Data.Repositories;
-
+using System.Text.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -24,7 +25,9 @@ builder.Services.AddSwaggerGen(options =>
         Description = "API REST para gerenciamento de pets, donos e serviços."
     });
 
-    var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlFile =
+        $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 
     options.IncludeXmlComments(xmlPath);
@@ -52,13 +55,37 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapGet("/api/health", async (ApplicationDbContext db) =>
+app.MapHealthChecks("/health", new HealthCheckOptions
 {
-    var canConnect = await db.Database.CanConnectAsync();
+    ResultStatusCodes =
+    {
+        [HealthStatus.Healthy] = StatusCodes.Status200OK,
+        [HealthStatus.Degraded] = StatusCodes.Status200OK,
+        [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable
+    },
 
-    return canConnect
-        ? Results.Ok("Banco SQLite rodando lisinho! 🐾")
-        : Results.StatusCode(500);
+    ResponseWriter = async (context, report) =>
+    {
+        context.Response.ContentType = "application/json";
+
+        var response = new
+        {
+            status = report.Status.ToString(),
+            totalDuration = report.TotalDuration,
+            checks = report.Entries.Select(entry => new
+            {
+                name = entry.Key,
+                status = entry.Value.Status.ToString(),
+                duration = entry.Value.Duration,
+                exception = app.Environment.IsDevelopment()
+                    ? entry.Value.Exception?.Message
+                    : null
+            })
+        };
+
+        await context.Response.WriteAsync(
+            JsonSerializer.Serialize(response));
+    }
 });
 
 app.MapControllers();

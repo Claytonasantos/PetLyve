@@ -1,4 +1,4 @@
-# Petlyfe - Projeto Petshop (CP1 e CP2)
+# Petlyfe - Projeto Petshop (CP1, CP2 e CP3)
 
 **Grupo:**
 * Guilherme Sola Garcia - RM563674

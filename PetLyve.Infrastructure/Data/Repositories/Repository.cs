@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PetLyve.Application;
+using PetLyve.Application.Pagination;
 using PetLyve.Domain.Entities.Base;
 
 namespace PetLyve.Infrastructure.Data.Repositories;
@@ -20,6 +21,34 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
         return await _dbSet
             .AsNoTracking()
             .ToListAsync();
+    }
+
+    public async Task<PagedResult<T>> GetPagedAsync(
+        PageRequest request,
+        Func<IQueryable<T>, IOrderedQueryable<T>> orderBy)
+    {
+        ArgumentNullException.ThrowIfNull(request);
+        ArgumentNullException.ThrowIfNull(orderBy);
+
+        var query = _dbSet.AsNoTracking();
+
+        var totalItems = await query.CountAsync();
+
+        // long evita overflow em páginas muito altas; além do total a
+        // página é simplesmente vazia (não é erro).
+        var skip = (long)(request.Page - 1) * request.PageSize;
+
+        if (skip >= totalItems)
+        {
+            return new PagedResult<T>([], totalItems);
+        }
+
+        var items = await orderBy(query)
+            .Skip((int)skip)
+            .Take(request.PageSize)
+            .ToListAsync();
+
+        return new PagedResult<T>(items, totalItems);
     }
 
     public async Task<T?> GetByIdAsync(Guid id)

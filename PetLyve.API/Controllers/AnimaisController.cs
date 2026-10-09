@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Asp.Versioning;
+using Microsoft.AspNetCore.Mvc;
 using PetLyve.Application;
 using PetLyve.Application.DTOs.Animal;
 using PetLyve.Domain.Entities;
@@ -6,6 +7,7 @@ using PetLyve.Domain.Entities;
 namespace PetLyve.API.Controllers;
 
 [ApiController]
+[ApiVersionNeutral]
 [Route("api/[controller]")]
 public class AnimaisController : ControllerBase
 {

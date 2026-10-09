@@ -1,4 +1,6 @@
-﻿using PetLyve.Application.DTOs.Dono;
+﻿using PetLyve.Application.DTOs;
+using PetLyve.Application.DTOs.Dono;
+using PetLyve.Application.Pagination;
 using PetLyve.Domain.Entities;
 
 namespace PetLyve.Application.Services;
@@ -17,6 +19,29 @@ public class DonoService
         var donos = await _repository.GetAllAsync();
 
         return donos.Select(MapToResponse);
+    }
+
+    public async Task<PagedResponseDto<DonoResponseDto>> GetPagedAsync(
+        int page,
+        int pageSize)
+    {
+        var request = PageRequest.Create(page, pageSize);
+
+        // Nome não é único: DonoId desempata e mantém as páginas reproduzíveis.
+        var result = await _repository.GetPagedAsync(
+            request,
+            query => query
+                .OrderBy(dono => dono.Nome)
+                .ThenBy(dono => dono.DonoId));
+
+        var items = result.Items
+            .Select(MapToResponse)
+            .ToList();
+
+        return PagedResponseDto<DonoResponseDto>.Create(
+            request,
+            result.TotalItems,
+            items);
     }
 
     public async Task<DonoResponseDto> GetByIdAsync(Guid id)
